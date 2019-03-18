@@ -254,8 +254,121 @@ h4{
     font-size: 22px;
     position: absolute;
 }
-.ct .view{
+.view{
 	margin-left: 33px;
+	color: #BABABA;
+    font-size: 12px;
+    font-style: italic
+}
+/*định dạng thẻ tag*/
+.ct-tags{
+    margin-top:5px;
+    width: 359px;
+    margin-left:1px;
+}
+.tags{
+	margin-top: 5px;
+}
+.tags ul li{
+	display: inline-block;
+	padding: 5px 5px 10px 5px;
+}
+.tags a {
+    display: inline-block;
+    height: 23px;
+    margin: 0 10px 0 0;
+    padding: 0 7px 2px 14px;
+    white-space: nowrap;
+    position: relative;
+    background-color: #34495e;
+    color: #fbfbfb;
+    font: bold 11px/21px Arial, Tahoma, sans-serif;
+    text-decoration: none;
+    border-top: 1px solid #34495e;
+    border-bottom: 1px solid #34495e;
+    border-right: 1px solid #34495e;
+    border-radius: 1px 3px 3px 1px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.tags a:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left:-6px;
+    width: 11px;
+    height: 11px;
+    background-color: #34495e;
+    border-left: 1px solid #34495e;
+    border-bottom: 1px solid #34495e;
+    border-radius: 0 0 0 2px;
+ }
+.tags a:before {
+    -webkit-transform: scale(1, 1.5) rotate(45deg);
+    -moz-transform: scale(1, 1.5) rotate(45deg);
+    -ms-transform: scale(1, 1.5) rotate(45deg);
+    transform: scale(1, 1.5) rotate(45deg);
+}
+.tags a:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 1px;
+    width: 5px;
+    height: 5px;
+    background:#fbfbfb;
+    border-radius: 4px;
+    border: 1px solid #DCA03B;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.21);
+}
+/*phim sắp chiếu*/
+.ct-phim-sc{
+    background: #333;
+    margin-top:5px;
+    width: 359px;
+    color: #eee;
+    margin-left:1px;
+}
+.phim-sc img{
+	width: 70px;
+	height: 70px;
+}
+.phim-sc ul li{
+	list-style: none;
+	padding:5px 5px 5px 0px;
+	border-bottom:1px dashed #bababa;
+	height: auto;
+	width: 359px;
+	margin-left: -15px;
+}
+.phim-sc ul{
+}
+.image{
+
+}
+.image-name{
+	display:flex;
+}
+.name{
+	padding-left: 8px;
+}
+.read-name{
+	padding-left: 8px;
+}
+.tt-phim{
+ flex-direction: column;
+ position: relative;
+}
+.tt-phim p{
+	margin:0px !important; 
+}
+.mat-sau{
+     position: absolute;
+     font-size: 10px;
+     left: 5px;
+}
+.view-sau{
+	margin-left: 25px;
 	color: #BABABA;
     font-size: 12px;
     font-style: italic
