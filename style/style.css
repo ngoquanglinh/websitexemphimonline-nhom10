@@ -52,32 +52,65 @@ font-size: 30px;
 	padding-top: 1px;
 	background-color: #1a1a1a;
 }
-.ds-menu{
-	background-color: #34495e;
-	width: 100%;
-	height: 40px;
-	margin:0 auto; 
+#menu{
+	margin-top: 2px;
 }
-.ds-menu ul{
-	width: 90%;
-	height: 40px;
+#menu ul{
+	list-style-type: none;
+    background: #34495e;
+    margin-bottom: 0px; 
 }
-.ds-menu ul li{
-	display: inline-block;
+#menu ul li{
+	color: #f1f1f1;
+	display: inline-table;
+	width:120px;
+	height: 40px;
 	line-height: 40px;
-	text-decoration: underline;
-	border-left: 1px solid #ffffff;
+	position: relative;
+	padding-left: 3px;
+	border-left:0.5px solid #dcdcdc; 
 }
-.ds-menu ul li a{
-	padding:20px;
-	color: #ffffff;
+#menu ul li a{
+	text-decoration:none;
+	display: block; 
+	color: #fff;
+	font-size:13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+#menu ul li a:hover{
+	color: #dcdcdc;
+}
+#menu ul li .sub-menu{
+	display: none;
+	position: absolute;
+	min-width: 500px;
+	min-height: 100px;
+	background-color: #273847;
+}
+#menu ul li .sub-menu li{
+	border-left: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 11px;		
+	color: #f1f1f1;
+}
+#menu ul li:hover .sub-menu{
+	display: block;
+    top: 100%;
+    left: 0;
+    z-index: 101;  
+}
+.sub-menu li a{
+	font-size: 11px !important;
 }
 .fa, .fab, .fal, .far, .fas{
 	color:#FFFFFF;
 	font-size: 20px;
 	padding:5px; 
-
 }
+
 /*bắt đàu của quảng cáo*/
 .ads{
 	margin-top:5px;  
@@ -167,6 +200,7 @@ h4{
 }
 .row-footer{
 	padding-top:15px; 
+	padding-right: 5px;
 }
 .row-footer h5{
 	color: #ffffff;
@@ -182,6 +216,10 @@ h4{
 
 	color:#ffffff;
 	text-decoration: none;
+}
+.container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
 }
 /*kết thúc left content*/
 .title-right{
