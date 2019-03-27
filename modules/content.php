@@ -1,31 +1,43 @@
 <div class="container-fluid cf-content">
+	<div class="row">
 		<div class="container">
-           <?php
-		        if(isset($_GET['xem'])){
-					$tam=$_GET['xem'];
+			<?php 
+			if(isset($_GET['view'])) {
+				 $tamt=$_GET['view'];
+			}else{
+				 $tamt='';
+			}if($tamt=='xemphim'){
+				 include('modules/mid/mid.php');
+			}
+			else
+			{
+				if(isset($_GET['xem'])){
+					 $tam=$_GET['xem'];
 				}else{
-					$tam='';
+					 $tam='';
 				}if($tam=='phimkinhdi'){
-					include('modules/left/phimkinhdi.php');
+					 include('modules/left/phimkinhdi.php');
 				}elseif($tam=='phimle'){
-					include('modules/left/phimle.php');
+					 include('modules/left/phimle.php');
 				}elseif($tam=='anime'){
-					include('modules/left/anime.php');
+					 include('modules/left/anime.php');
 				}elseif($tam=='phimbo'){
-					include('modules/left/phimbo.php');
+					 include('modules/left/phimbo.php');
 				}elseif($tam=='hoathinh'){
-					include('modules/left/hoathinh.php');
+					 include('modules/left/hoathinh.php');
 				}elseif($tam=='tvshow'){
-					include('modules/left/tvshow.php');
+					 include('modules/left/tvshow.php');
 				}elseif($tam=='chieurap'){
-					include('modules/left/chieurap.php');
+					 include('modules/left/chieurap.php');
+				}elseif($tam=='thongtinphim'){
+					 include('modules/left/thongtinphim.php');
+				}elseif($tam=='loaiphim'){
+				     include('modules/left/loaiphim.php');
 				}else
-					include('modules/left/home.php');
-		   ?>
-           <?php
-		        include('modules/right/top-right.php');
-				include('modules/right/bottom-right.php');
-           ?>
-
-        </div><!-- kết thúc content-->
-</div>	<!-- ket thúc contaner-fuil -->
+				     include('modules/left/home.php');
+				 include('modules/right/right.php');
+		    }
+		    ?>
+		</div>
+	</div>
+</div>

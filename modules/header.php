@@ -1,10 +1,12 @@
-<div class="container-fluid cf-top">
+<!-- bat dau phan navbar -->
+<div class="header">
+	<div class="container-fluid cf-top">
 		<div class="container">
 			<div class="row row1">
 				<div class="col-md-12">
 					<!-- tao menu -->
 					<div class="navbar-header">
-						<img class="navbar-brand"src="image/logo.png" alt="logo">
+						<img class="navbar-brand" src="image/logo.png" alt="logo">
 					</div>
 					<!-- menu va logo -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -23,5 +25,5 @@
 			</div>
 		</div>
 	</div>	
+</div><!-- ket thuc header -->	
 	<!-- ket thuc dong navbar -->
-	

@@ -2,6 +2,12 @@
 	margin:0px;
 	padding:0px;
 }
+body{
+	background-color:#1a1a1a;
+    margin: 0;
+    font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 14px;
+}
 h1, .h1, h2, .h2, h3, .h3{
 	margin:0px;
 	padding:0px;  
@@ -27,7 +33,7 @@ h1, .h1, h2, .h2, h3, .h3{
 	margin-left:100px;
 }
 .form-control{
-font-size: 30px;
+    font-size: 30px;
 }
 .btnhoidap{
     color:#592a92;
@@ -60,6 +66,10 @@ font-size: 30px;
     background: #34495e;
     margin-bottom: 0px; 
 }
+#menu ul #home{
+	border-left:none;
+	width:30px;
+}
 #menu ul li{
 	color: #f1f1f1;
 	display: inline-table;
@@ -68,7 +78,7 @@ font-size: 30px;
 	line-height: 40px;
 	position: relative;
 	padding-left: 3px;
-	border-left:0.5px solid #dcdcdc; 
+	border-left:0.5px solid #6B6B6B; 
 }
 #menu ul li a{
 	text-decoration:none;
@@ -112,6 +122,9 @@ font-size: 30px;
 }
 
 /*bắt đàu của quảng cáo*/
+.container-fluid .ct{
+		background-color:#1a1a1a;
+}
 .ads{
 	margin-top:5px;  
 	width:100%;
@@ -176,23 +189,25 @@ font-size: 30px;
 }
 .title-phimbo h3{
 	padding-top:5px;
-	font-size: 20px;
+	font-size: 19px;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
+    font-family:tahoma, verdana, arial, sans-serif;
 }
 h4{
 	color: #ff8034;
 }
 .all{
 	padding-top: 10px;
-	padding-left: 30px;
+	padding-left: 60px;
 }
 .all a{
 	text-transform: capitalize;
 	color: #eee;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 13px;
+	letter-spacing: -1px;
 }
 /*css footer*/
 .footer{
@@ -237,7 +252,7 @@ h4{
     padding:50px;
     text-decoration: none;
     line-height: 50px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .title-right a:hover{
 	color:#ffc20a;
@@ -248,7 +263,8 @@ h4{
     margin-top:5px;
     width: 359px;
     color: #eee;
-    margin-left:1px;   
+    margin-left:1px;
+    font-family: Arial,Tahoma;
 }
 .list-film a:focus{
 	outline-offset:0px;
@@ -410,4 +426,186 @@ h4{
 	color: #BABABA;
     font-size: 12px;
     font-style: italic
+}
+/*============trang thông tin phim===========*/
+.thongtinfilm{
+	color: #dcdcdc;
+    overflow: hidden;
+    background: #282828;
+    padding: 5px 10px;
+    margin: 5px 0 10px 0;
+}
+.pf-image{
+	border:2px solid #6F6F6F;
+}
+.pf-image img{
+	width:100%;
+	height:340px;
+	position:relative;
+}
+.pf-image button{
+	position:absolute;
+	background-color:#d9534f;
+	bottom:5px;
+	right:105px;
+	height:12%;
+	border: 1px solid #d43f3a;
+	border-radius:4px;
+}
+.pf-image button:hover{
+    background-color:#FF4A4A;	
+}
+.profile-film ul li{
+	padding: 3px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.profile-film h1{
+    font-size: 23px;
+    line-height: 1.5em;
+    color: #0094fc;
+    font-weight: bold
+}
+.profile-film h2{
+	font-size: 15px;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: bold;
+}
+.profile-film ul li a{
+	 color: #729DC7;
+	 text-decoration:none; 
+
+}
+.profile-film ul li a:hover{
+	    color: #337ab7;
+}
+
+.profile-film ul li label{
+    margin: 0;
+    color: #fff;
+}
+.profile-film ul li strong{
+    color: #fff601;
+}
+.profile-film ul .fb {
+	
+}
+.fb-save{
+
+}
+.fb-like{
+	width: 155px;
+	height: 100px;
+	float: left;
+
+}
+.caption{
+    background: #466079;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+	margin-left:0px;
+	margin-right:0px;
+}
+.film-infor{
+	color: #dcdcdc;
+    overflow: hidden;
+    background: #282828;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;
+}
+.film-content{
+	line-height: 2px;
+    font-size: 16px;
+    background: #282828;
+    padding: 10px;
+	margin-left:0px;
+	margin-right:0px;
+}
+.film-content p{
+	color: #fff;
+	color: #dcdcdc!important;
+}
+/*phần bình luận*/
+.media-object{
+	width: 64px;
+	height: 64px;
+}
+.film-footer{
+	background-color:#fff;
+	min-height:500px; 
+	border-radius: 5px;
+	margin:5px 0 0 0;
+}
+/*trang phim chiếu rạp*/
+.chieurap{
+	display:flex;
+	width:100%;
+}
+.chieurap select{
+	font-size:13px;
+	border-radius: 3px;
+	text-transform:capitalize;
+	padding:2px 5px; 
+	background-color: #fff;
+
+}
+.option{
+	padding:10px 5px 10px 0;
+	margin-left: 15px; 
+}
+.option button{
+	width: 140px;
+	border-radius: 3px;
+	padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    outline: none;
+	background-color: #4267b2;
+	text-transform:capitalize;
+}
+
+.option button:hover{
+	background-color: #5cb85c;
+}
+/*phan xem phim*/
+.xem-film{
+	background-color:#fff;
+	min-height:500px; 
+	border-radius: 5px;
+	width: 100%; 
+    margin-right: 0px;
+    margin-bottom: 3px;
+}
+.movie{
+	margin-top: 3px;
+}
+.layout-phim{
+	width: 100%;
+	padding:3px 0 3px 0;  
+}
+video{
+	width: 1140px;
+	height: 500px;
+}
+.messager{
+	font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #B8B612;
+    padding: 10px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    background: #000;
+    margin-bottom: 4px;
+}
+.ads1 img{
+    width: 1140px;
+    margin-bottom: 3px;
+    height: 80px;
 }

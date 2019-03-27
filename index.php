@@ -8,16 +8,24 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="fontawesome/fontawesome-free-5.7.2-web/css/all.min.css" type="text/css">
 	<link rel="stylesheet" href="style/style.css" type="text/css">
+	<meta property="fb:app_id" content="408866402993380">
 </head>
 <body>
-	<!-- bat dau phan navbar -->
-	 <?php
-	 	include('modules/header.php');
-		include('modules/menu.php');
-		include('modules/content.php');
-		include('modules/footer.php');
-	 ?>
+	<?php
+	include('modules/header.php');
+	include('modules/menu.php');
+	include('modules/quangcao.php');
+	include('modules/content.php');
+	include('modules/footer.php');
+	include('admin/modules/config.php');
+	?>
 	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2">
+	</script>
+	<div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=408866402993380&autoLogAppEvents=1">
+    </script>
 </body>
 </html>
