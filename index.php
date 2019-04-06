@@ -12,12 +12,12 @@
 </head>
 <body>
 	<?php
+	include('admin/modules/config.php');
 	include('modules/header.php');
 	include('modules/menu.php');
 	include('modules/quangcao.php');
 	include('modules/content.php');
 	include('modules/footer.php');
-	include('admin/modules/config.php');
 	?>
 	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>

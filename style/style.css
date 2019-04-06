@@ -1,3 +1,9 @@
+
+.container{
+	padding: 0!important;
+	width: 980px; 
+	height: auto;
+}
 *{
 	margin:0px;
 	padding:0px;
@@ -68,12 +74,11 @@ h1, .h1, h2, .h2, h3, .h3{
 }
 #menu ul #home{
 	border-left:none;
-	width:30px;
+	width:40px; 
 }
 #menu ul li{
 	color: #f1f1f1;
-	display: inline-table;
-	width:120px;
+	display: inline-block;
 	height: 40px;
 	line-height: 40px;
 	position: relative;
@@ -84,10 +89,11 @@ h1, .h1, h2, .h2, h3, .h3{
 	text-decoration:none;
 	display: block; 
 	color: #fff;
-	font-size:13px;
+	font-size:12px;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
+	padding: 5px;
 }
 #menu ul li a:hover{
 	color: #dcdcdc;
@@ -136,15 +142,15 @@ h1, .h1, h2, .h2, h3, .h3{
 }
 /*bắt đàu slide*/
 .sline{
-	margin: 5px 0 0 15px;
+	padding-top: 5px;
+
 }
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
 	width: 770px;
 }
 /*thumbnail đầu tiên*/
 .thumbnail{
-	margin-left: 15px;
-	padding:0px 0px; 
+	
 	background-color: #1a1a1a;
 	border:hidden;
 	text-align:center; 
@@ -154,8 +160,9 @@ h1, .h1, h2, .h2, h3, .h3{
 	border:none;
 }
 .thumbnail-thu1 img{
-	width:160px;
+	width:91%;
 	height:210px;
+	border-radius: 3px;
 }
 .name{
     white-space: nowrap;
@@ -176,16 +183,19 @@ h1, .h1, h2, .h2, h3, .h3{
     color: #fbfbfb !important;
     font-weight: normal;
     text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .thumbnail, .img-thumbnail{
 	box-shadow: none;
 }
 /* bắt đầu css title của phim bộ*/
 .title-phimbo{
-	width: 102%;
+	width: 105%;
 	height: 40px;
 	background:#466079; 
-	margin-left: 1px;
+	
 }
 .title-phimbo h3{
 	padding-top:5px;
@@ -199,14 +209,14 @@ h4{
 	color: #ff8034;
 }
 .all{
-	padding-top: 10px;
+	padding-top: 15px;
 	padding-left: 60px;
 }
 .all a{
 	text-transform: capitalize;
 	color: #eee;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 15px;
 	letter-spacing: -1px;
 }
 /*css footer*/
@@ -226,15 +236,12 @@ h4{
 }
 .row-footer a{
 	color:#999999;
+	text-transform:capitalize;
 }
 .row-footer a:hover{
 
 	color:#ffffff;
 	text-decoration: none;
-}
-.container-fluid{
-	padding-right: 0px;
-	padding-left: 0px;
 }
 /*kết thúc left content*/
 .title-right{
@@ -242,14 +249,12 @@ h4{
     background: #7713f1;
     color: #ccc;
     margin-top:5px;
-    width: 359px;
     margin-left:1px;
 }
 .title-right a{
     color: #eee;
     font-weight: bold;
     text-transform: uppercase;
-    padding:50px;
     text-decoration: none;
     line-height: 50px;
     font-size: 16px;
@@ -261,7 +266,6 @@ h4{
 .list-film{ 
     background: #333;
     margin-top:5px;
-    width: 359px;
     color: #eee;
     margin-left:1px;
     font-family: Arial,Tahoma;
@@ -283,6 +287,8 @@ h4{
 	text-transform:capitalize;
 	font-weight:bold;
 	color: #fff;
+	white-space: nowrap;
+	text-overflow:ellipsis;
 }
 .ct ul li a:hover{
 	color: #ffc20a;
@@ -314,10 +320,13 @@ h4{
     font-size: 12px;
     font-style: italic
 }
+.ul-right{
+    padding:0px; 
+}
 /*định dạng thẻ tag*/
 .ct-tags{
     margin-top:5px;
-    width: 359px;
+
     margin-left:1px;
 }
 .tags{
@@ -379,7 +388,6 @@ h4{
 .ct-phim-sc{
     background: #333;
     margin-top:5px;
-    width: 359px;
     color: #eee;
     margin-left:1px;
 }
@@ -392,7 +400,7 @@ h4{
 	padding:5px 5px 5px 0px;
 	border-bottom:1px dashed #bababa;
 	height: auto;
-	width: 359px;
+	width: 300px;
 	margin-left: -15px;
 }
 .phim-sc ul{
@@ -428,6 +436,9 @@ h4{
     font-style: italic
 }
 /*============trang thông tin phim===========*/
+.edit-pd{
+	padding:0; 
+}
 .thongtinfilm{
 	color: #dcdcdc;
     overflow: hidden;
@@ -447,7 +458,7 @@ h4{
 	position:absolute;
 	background-color:#d9534f;
 	bottom:5px;
-	right:105px;
+	right:75px;
 	height:12%;
 	border: 1px solid #d43f3a;
 	border-radius:4px;
@@ -484,6 +495,7 @@ h4{
 .profile-film ul li label{
     margin: 0;
     color: #fff;
+    font-size: 13px;
 }
 .profile-film ul li strong{
     color: #fff601;
@@ -495,8 +507,6 @@ h4{
 
 }
 .fb-like{
-	width: 155px;
-	height: 100px;
 	float: left;
 
 }
@@ -528,6 +538,7 @@ h4{
 .film-content p{
 	color: #fff;
 	color: #dcdcdc!important;
+	text-transform:capitalize;
 }
 /*phần bình luận*/
 .media-object{
@@ -590,7 +601,7 @@ h4{
 	padding:3px 0 3px 0;  
 }
 video{
-	width: 1140px;
+	width: 97%;
 	height: 500px;
 }
 .messager{
@@ -605,7 +616,7 @@ video{
     margin-bottom: 4px;
 }
 .ads1 img{
-    width: 1140px;
+    width:97%;
     margin-bottom: 3px;
     height: 80px;
 }

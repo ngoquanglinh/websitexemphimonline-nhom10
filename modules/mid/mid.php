@@ -10,7 +10,10 @@ function getBetween($content,$start,$end){
 ?>
 
 <?php 
-			$link_video="https://www.facebook.com/394877867969802/videos/2269501306444450/";
+			$sql_xemphim="SELECT * FROM	chitiet_phim WHERE id_phim=$_GET[id_phim]";
+			$query_phim=mysqli_query($connect,$sql_xemphim);
+			$array_xemphim=mysqli_fetch_array($query_phim);
+			$link_video="$array_xemphim[linkphim]";
 			if (isset($link_video)){
 				$ch = curl_init($link_video);
 				curl_setopt( $ch, CURLOPT_POST, false );
@@ -57,8 +60,8 @@ function getBetween($content,$start,$end){
 	</div>
 </div>
 	<?php
-					}
-					?>
+	}
+	?>
 <!--end video-->
 <div class="container-fluid movie-bottom">
 	<div class="container">

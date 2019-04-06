@@ -1,5 +1,5 @@
 <div class="container-fluid cf-content">
-	<div class="row">
+	
 		<div class="container">
 			<?php 
 			if(isset($_GET['view'])) {
@@ -39,5 +39,4 @@
 		    }
 		    ?>
 		</div>
-	</div>
 </div>

@@ -1,390 +1,201 @@
 
-		<div class="row"><!-- bắt đầu sline -->
-			<div class="content-left">
-				<div class="col-md-8">
-					<div class="row">
-						<div id="carousel-example-generic" class="carousel slide sline" data-ride="carousel">
-							<!-- Indicators -->
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-							</ol>
+<!-- bắt đầu sline -->
+<div class="content-left">
+	<div class="col-md-8">
+		<div class="row slide">
+			<div id="carousel-example-generic" class="carousel slide sline" data-ride="carousel">
+				<!-- Indicators -->
 
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<img src="image/slide1.jpg" alt="...">
-								</div>
-								<div class="item">
-									<img src="image/slide2.jpg" alt="...">
-								</div>
-								<div class="item">
-									<img src="image/slide3.jpg" alt="...">
-								</div>
-							</div>
-
-							<!-- nút chuyển slide -->
-							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left"></span>
-							</a>
-							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right"></span>
-							</a>
-						</div>
-					</div>			<!-- kết thúc sline -->
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="index.php?xem=thongtinphim" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
-
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="image/slide1.jpg" alt="...">
 					</div>
-					<!-- ket thuc thumbnai 1 -->
-					<div class="row title-phimbo">
-						<div class="col-md-12">
-							<div class="col-md-9">
-								<h3><i class="fas fa-align-justify"></i>phim bộ mới cập nhật</h3>
-							</div>
-							<div class="col-md-3 all"><a href="">xem tất cả</a></div>	
-						</div>
+					<div class="item">
+						<img src="image/slide2.jpg" alt="...">
 					</div>
-					<!-- bắt đàu thubnai 2 -->
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
+					<div class="item">
+						<img src="image/slide3.jpg" alt="...">
+					</div>
+				</div>
 
-					</div>
-					<!-- bắt đầu thumbnai 3 -->
-					<div class="row">
+				<!-- nút chuyển slide -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>			<!-- kết thúc sline1 -->
+		<div class="row">
+			<div id="mylove" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<?php
+						    $sql_phim="SELECT * FROM chitiet_phim WHERE (id_loaiphim=2 OR id_loaiphim=1) ORDER BY id_phim DESC LIMIT 4";
+						    $query_phim=mysqli_query($connect,$sql_phim);
+						?>
 						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
+						<?php	
+						while($array_phim=mysqli_fetch_array($query_phim)){
+						?>	
+							<div class="col-xs-6 col-md-3 edit-pd">
+								<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phim['id_loaiphim']?>&id_phim=<?php echo $array_phim['id_phim']?>" class="thumbnail">
+									<img src="<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="anh">
+									<p class="name"><?php echo $array_phim['tenphim'] ?></p>
+									<p class="real-name"><?php echo $array_phim['ten_english'] ?></p>
 								</a>
 							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
+						<?php
+						}
+						?>		
+						</div>  
+					</div>	
+					<div class="item">
+						<?php
+						    $sql_phim="SELECT * FROM chitiet_phim WHERE (id_loaiphim=2 OR id_loaiphim=1) ORDER BY id_phim DESC LIMIT 5,4";
+						    $query_phim=mysqli_query($connect,$sql_phim);
+						?>
+						<div class="row thumbnail-thu1">
+						<?php	
+						while($array_phim=mysqli_fetch_array($query_phim)){
+						?>	
+							<div class="col-xs-6 col-md-3 edit-pd">
+								<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phim['id_loaiphim']?>&id_phim=<?php echo $array_phim['id_phim']?>" class="thumbnail">
+									<img src="<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="...">
+									<p class="name"><?php echo $array_phim['tenphim'] ?></p>
+									<p class="real-name"><?php echo $array_phim['ten_english'] ?></p>
 								</a>
 							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
+						<?php
+						}
+						?>		
 						</div>
+					</div>	
+					<div class="item">
+						<?php
+						    $sql_phim="SELECT * FROM chitiet_phim WHERE (id_loaiphim=2 OR id_loaiphim=1) ORDER BY id_phim DESC LIMIT 9,4";
+						    $query_phim=mysqli_query($connect,$sql_phim);
+						?>
+						<div class="row thumbnail-thu1">
+						<?php	
+						while($array_phim=mysqli_fetch_array($query_phim)){
+						?>	
+							<div class="col-xs-6 col-md-3 edit-pd">
+								<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phim['id_loaiphim']?>&id_phim=<?php echo $array_phim['id_phim']?>" class="thumbnail">
+									<img src="<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="...">
+									<p class="name"><?php echo $array_phim['tenphim'] ?></p>
+									<p class="real-name"><?php echo $array_phim['ten_english'] ?></p>
+								</a>
+							</div>
+						<?php
+						}
+						?>		
+						</div>
+					</div>	
+				</div>
+				<a class="left carousel-control" href="#mylove" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#mylove" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+		<!-- kết thúc sline phim lẻ và bộ -->
+		<div class="row title-phimbo">
+			<div class="col-md-12">
+				<div class="col-md-9">
+					<h3><i class="fas fa-align-justify"></i>phim bộ mới cập nhật</h3>
+				</div>
+				<div class="col-md-3 all"><a href="">xem tất cả</a></div>	
+			</div>
+		</div>
+		<!-- bắt đàu phim bộ -->
+		<?php
+		$sql_phimbo="select * from chitiet_phim where id_loaiphim=2";
+		$query_phimbo=mysqli_query($connect,$sql_phimbo);
+		?>
+		<div class="row">
+			<div class="row thumbnail-thu1">
+			<?php
+				while($array_phimbo=mysqli_fetch_array($query_phimbo)){
+			?>				
 
-					</div>
-					<!-- bắt đầu thumbnail 4 -->
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
+				<div class="col-xs-6 col-md-3 edit-pd">
+					<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phimbo['id_loaiphim']?>&id_phim=<?php echo $array_phimbo['id_phim']?>" class="thumbnail">
+						<img src="<?php echo $array_phimbo['anh'] ?>" data-src="holder.js/100%x180" alt="...">
+						<p class="name"><?php echo $array_phimbo['tenphim'] ?></p>
+						<p class="real-name"><?php echo $array_phimbo['ten_english'] ?></p>
+					</a>
+				</div>
+			<?php
+			}
+			?>	
+			</div>
+		</div>
+		<!-- title thứ 2 -->
+		<div class="row title-phimbo">
+			<div class="col-md-12">
+				<div class="col-md-9">
+					<h3><i class="fas fa-align-justify"></i>phim lẻ mới cập nhật</h3>
+				</div>
+				<div class="col-md-3 all"><a href="">xem tất cả</a></div>	
+			</div>
+		</div><!-- thumbnail 5 -->
+		<?php
+		$sql_phimle="select * from chitiet_phim where id_loaiphim=1";
+		$query_phimle=mysqli_query($connect,$sql_phimle);
+		?>			
+		<div class="row">
+			<div class="row thumbnail-thu1">
+				<?php
+				while($array_phimle=mysqli_fetch_array($query_phimle)){
+					?>				
 
+					<div class="col-xs-6 col-md-3 edit-pd">
+						<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phimle['id_loaiphim']?>&id_phim=<?php echo $array_phimle['id_phim']?>" class="thumbnail">
+							<img src="<?php echo $array_phimle['anh']?>" data-src="holder.js/100%x180" alt="abc">
+							<p class="name"><?php echo $array_phimle['tenphim']?></p>
+							<p class="real-name"><?php echo $array_phimle['ten_english']?></p>
+						</a>
 					</div>
-					<!-- title thứ 2 -->
-					<div class="row title-phimbo">
-						<div class="col-md-12">
-							<div class="col-md-9">
-								<h3><i class="fas fa-align-justify"></i>phim lẻ mới cập nhật</h3>
-							</div>
-							<div class="col-md-3 all"><a href="">xem tất cả</a></div>	
-						</div>
-					</div><!-- thumbnail 5 -->
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
-					</div><!-- start thumbnail 6 -->
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
-					</div><!-- thubnail 7 -->
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- title thứ 3 -->
-					<div class="row title-phimbo">
-						<div class="col-md-12">
-							<div class="col-md-9"><h3><i class="fas fa-align-justify"></i>anime phim hoạt hình</h3></div>
-							<div class="col-md-3 all"><a href="">xem tất cả</a></div>						
-						</div>
-					</div><!-- thumbnail 8 -->
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
-
-					</div>
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
-
-					</div>    
-					<div class="row">
-						<div class="row thumbnail-thu1">
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img1.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img2.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="" class="thumbnail">
-									<img src="image/img3.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<a href="image" class="thumbnail">
-									<img src="image/img4.jpg" data-src="holder.js/100%x180" alt="...">
-									<p class="name">tên phim</p>
-									<p class="real-name">tên phim E</p>
-								</a>
-							</div>
-						</div>
-					</div> 
-			</div><!-- kết thúc left --> 
+					<?php
+				}
+				?>
+			</div>
+		</div>
+		<!-- kết thúc phim lẻ dòng 1 -->
+		<!-- title thứ 3 -->
+		<div class="row title-phimbo">
+			<div class="col-md-12">
+				<div class="col-md-9"><h3><i class="fas fa-align-justify"></i>anime phim hoạt hình</h3></div>
+				<div class="col-md-3 all"><a href="">xem tất cả</a></div>						
+			</div>
+		</div>
+		<!-- thumbnail 8 -->
+		<?php
+		$sql_phimhoathinh="select * from chitiet_phim where id_loaiphim=3";
+		$query_phimhoathinh=mysqli_query($connect,$sql_phimhoathinh);
+		?>	
+		<div class="row">
+			<div class="row thumbnail-thu1">
+				<?php
+				while ($array_phimhoathinh=mysqli_fetch_array($query_phimhoathinh)){
+				?>						
+					<div class="col-xs-6 col-md-3 edit-pd">			
+						<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phimhoathinh['id_loaiphim']?>&id_phim=<?php echo $array_phimhoathinh['id_phim']?>" class="thumbnail">
+							<img src="<?php echo $array_phimhoathinh['anh']?>" data-src="holder.js/100%x180" alt="...">
+							<p class="name"><?php echo $array_phimhoathinh['tenphim']?></p>
+							<p class="real-name"><?php echo $array_phimhoathinh['ten_english']?></p>
+						</a>				
+				    </div>
+				<?php
+				    }
+				?>
+			</div>
+		</div>
+	</div>
+</div> 
+<!-- kết thúc left --> 

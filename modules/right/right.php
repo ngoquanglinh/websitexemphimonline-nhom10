@@ -17,52 +17,41 @@
 						<!-- Tab panes -->
 						<div class="tab-content ct">
 							<div class="tab-pane active" id="phimbo">
-								<ul>
-									<li><span>1</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>2</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>3</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>4</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>5</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>6</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>7</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>8</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>9</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li class="end"><span>10</span><a href="">đông cung</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
+								<?php
+									$sql_phimbo="SELECT * FROM chitiet_phim WHERE id_loaiphim=2 ORDER BY id_phim DESC LIMIT 10";
+									$query_phimbo=mysqli_query($connect,$sql_phimbo);
+								?>
+								<ul class="ul-right">
+									<?php
+									for($i=1;$i<10;$i++){
+										while ($array_phimbo=mysqli_fetch_array($query_phimbo)){
+									?>
+									<li><span><?php echo $i++?></span><a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phimbo['id_loaiphim']?>&id_phim=<?php echo $array_phimbo['id_phim']?>"><?php echo $array_phimbo['tenphim'] ?></a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
+									<?php
+								 		}
+								 	}
+								 	?>
 								</ul>
 							</div>
 							<div class="tab-pane" id="phimle">
-								<ul>
-									<li><span>1</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>2</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>3</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>4</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>5</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>6</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>7</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>8</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li><span>9</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
-									<li class="end"><span>10</span><a href="">chiêu diêu</a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
+								<?php
+									$sql_phimle="SELECT * FROM chitiet_phim WHERE id_loaiphim=1 ORDER BY id_phim DESC LIMIT 10";
+									$query_phimle=mysqli_query($connect,$sql_phimle);
+								?>
+								<ul class="ul-right">
+									<?php
+									for($i=1;$i<10;$i++){
+										while ($array_phimle=mysqli_fetch_array($query_phimle)){
+									?>
+									<li><span><?php echo $i++?></span><a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phimle['id_loaiphim']?>&id_phim=<?php echo $array_phimle['id_phim']?>""><?php echo $array_phimle['tenphim'] ?></a><br /><i class="fas fa-eye mat"></i><i class="view">100,000 lượt xem</i></li>
+								<?php
+							 	  }
+							 	}
+							 	?>
 								</ul>
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 					<!-- phim sắp chiêu -->
 					<div class="row title-right">
 						<div class="col-md-12">
