@@ -12,7 +12,7 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<form class="navbar-form navbar-left formsearch" role="search">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="...">
+								<input type="text" class="form-control" placeholder="">
 							</div>
 							<button type="submit" class="btn btn-default"><i class="fas fa-search btn-search"></i></button>
 						</form>

@@ -1,7 +1,7 @@
 <?php
-$sql_thongtinphim="SELECT * FROM chitiet_phim WHERE id_phim=$_GET[id_phim]";
-$query_thongtinphim=mysqli_query($connect,$sql_thongtinphim);
-$array_thongtinphim=mysqli_fetch_array($query_thongtinphim);
+$sql_trailer="SELECT * FROM trailer WHERE id_trailer=$_GET[id_trailer]";
+$query_trailer=mysqli_query($connect,$sql_trailer);
+$array_trailer=mysqli_fetch_array($query_trailer);
 ?>
 <!-- bắt đầu sline -->
 <div class="content-left">
@@ -9,16 +9,16 @@ $array_thongtinphim=mysqli_fetch_array($query_thongtinphim);
     <div class="row thongtinfilm">
       <div class="col-md-5">
         <div class="pf-image">
-          <img src="<?php echo $array_thongtinphim['anh']?>" alt="">
-          <a href="index.php?view=xemphim&id_phim=<?php echo $array_thongtinphim['id_phim']?>">
+          <img src="<?php echo $array_trailer['image_trailer']?>" alt="">
+          <a href="index.php?view=xemtrailer&id_trailer=<?php echo $array_trailer['id_trailer']?>">
             <button><i class="fas fa-play-circle icon-btn-xp">xem phim</i></button>
           </a>	
         </div>    
       </div>
 
       <div class="col-md-7 profile-film">
-        <h1><?php echo $array_thongtinphim['tenphim'] ?></h1>
-        <h2><?php echo $array_thongtinphim['ten_english'] ?></h2>
+        <h1><?php echo $array_trailer['tenphim_trailer'] ?></h1>
+        <h2><?php echo $array_trailer['tenenglish_trailer'] ?></h2>
         <ul>
          <li> <label>Đang phát:<strong> Tập 1 vietsub</strong></label></li>
          <li> <label>Sắp chiếu:<strong> Tập 2 vietsub</strong></label></li>
@@ -50,7 +50,7 @@ $array_thongtinphim=mysqli_fetch_array($query_thongtinphim);
 <!-- mid -->
 <div class="row film-content">
   <div class="col-md-8 edit-pd">
-    <h5><strong><p><?php echo $array_thongtinphim['tenphim']." , ";echo $array_thongtinphim['ten_english'];?></p></strong></h5>	
+    <h5><strong><p><?php echo $array_trailer['tenphim_trailer']." , ";echo $array_trailer['tenenglish_trailer'];?></p></strong></h5>	
   </div>
 </div>
 <!-- bot -->

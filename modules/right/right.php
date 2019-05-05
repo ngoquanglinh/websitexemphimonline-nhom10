@@ -59,108 +59,30 @@
 						</div>
 					</div>
 					<div class="row ct-phim-sc">
+						<?php 
+							$sql_trailer="SELECT * FROM trailer ORDER BY id_trailer LIMIT 8";
+							$sql_query_trailer=mysqli_query($connect,$sql_trailer); 
+						 ?>
 						<div class="col-md-12 phim-sc">
 							<ul>
+								<?php 
+									while ($array_trailer=mysqli_fetch_array($sql_query_trailer)) {
+								 ?>
 								<li>
+									<a href="index.php?xem=thongtintrailer&id_trailer=<?php echo $array_trailer['id_trailer'] ?>">
 									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
+										<div><img src="<?php echo $array_trailer['image_trailer'] ?>" alt=""></div>
 										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
+											<div class="name"><p><?php echo $array_trailer['tenphim_trailer'] ?></p></div>
+											<div class="read-name"><p><?php echo $array_trailer['tenenglish_trailer'] ?></p></div>
 											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
 										</div>
 									</div>
+									</a>
 								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="image-name">
-										<div><img src="image/img5.jpg" alt=""></div>
-										<div class="tt-phim">
-											<div class="name"><p>đội trưởng marvel</p></div>
-											<div class="read-name"><p>captain marvel(2019)</p></div>
-											<i class="fas fa-eye mat-sau"></i><i class="view-sau">100,000 lượt xem</i>
-										</div>
-									</div>
-								</li>
+								<?php 
+									}
+								 ?>
 							</ul>
 						</div>
 					</div>

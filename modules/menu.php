@@ -1,10 +1,10 @@
-	<div class="menu-ngang">	
+	<div class="menu-ngang>	
 		<div class="container-fluid cf-content">
 			<div class="container">
 				<div class="row ds-menu">
 					<div class="col-md-12">
 						<div id="menu">
-							<ul>
+							<ul data-spy="affix" data-offset-top="30">
 								<li id="home"><a href="index.php"><i class="fas fa-home"></i></a></li>
 								<li>
 									<a href="#"><i class="far fa-clone"></i>thể loại</a>
@@ -38,7 +38,7 @@
 										<li><a href="">pháp</a></li>
 									</ul>
 								</li>
-								<li><a href="index.php?xem=phimle"><i class="fas fa-film"></i>phim lẻ</a>
+								<li><a href="index.php?xem=pagephim&id_loaiphim=1"><i class="fas fa-film"></i>phim lẻ</a>
 									<ul class="sub-menu">
 										<li><a href="index.php?xem=hanhdong">phim hành động</a></li>
 										<li><a href="index.php?xem=phimvientuong">phim viển tưởng</a></li>
@@ -49,7 +49,7 @@
 										<li><a href="">phim võ thuật-kiếm hiệp</a></li>
 									</ul>  
 								</li>
-								<li><a href="index.php?xem=phimbo"><i class="fas fa-poll-h"></i>phim bộ</a>
+								<li><a href="index.php?xem=pagephim&id_loaiphim=2"><i class="fas fa-poll-h"></i>phim bộ</a>
 									<ul class="sub-menu">
 										<li><a href="">phim bộ hàn quốc</a></li>
 										<li><a href="">phim bộ trung quốc</a></li>
@@ -59,10 +59,10 @@
 										<li><a href="">phim bộ nhật bản</a></li>
 									</ul>
 								</li>
-								<li><a href="index.php?xem=anime"><i class="fas fa-bolt"></i>anime</a></li>
-								<li><a href="index.php?xem=hoathinh"><i class="fas fa-dharmachakra"></i>hoạt hình</a></li>
-								<li><a href="index.php?xem=chieurap"><i class="fas fa-chalkboard"></i>chiếu rạp</a></li>
-								<li><a href="index.php?xem=tvshow"><i class="fas fa-bolt"></i>tvshow</a></li>
+								<li><a href="index.php?xem=pagephim&id_loaiphim=3"><i class="fas fa-bolt"></i>anime</a></li>
+								<li><a href="index.php?xem=pagephim&id_loaiphim=3"><i class="fas fa-dharmachakra"></i>hoạt hình</a></li>
+								<li><a href="index.php?xem=pagephim&id_loaiphim=1"><i class="fas fa-chalkboard"></i>chiếu rạp</a></li>
+								<li><a href="index.php?xem=pagephim&id_loaiphim=1"><i class="fas fa-bolt"></i>tvshow</a></li>
 							</ul>
 						</div>
 					</div>	

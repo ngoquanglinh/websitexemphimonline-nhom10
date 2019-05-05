@@ -8,6 +8,8 @@
 				 $tamt='';
 			}if($tamt=='xemphim'){
 				 include('modules/mid/mid.php');
+			}elseif ($tamt=='xemtrailer') {
+				 include('modules/mid/trailer.php');
 			}
 			else
 			{
@@ -27,12 +29,14 @@
 					 include('modules/left/hoathinh.php');
 				}elseif($tam=='tvshow'){
 					 include('modules/left/tvshow.php');
-				}elseif($tam=='chieurap'){
-					 include('modules/left/chieurap.php');
+				}elseif($tam=='pagephim'){
+					 include('modules/left/pagephim.php');
 				}elseif($tam=='thongtinphim'){
 					 include('modules/left/thongtinphim.php');
 				}elseif($tam=='loaiphim'){
 				     include('modules/left/loaiphim.php');
+		        }elseif($tam=='thongtintrailer'){
+				include('modules/left/thongtintrailer.php');
 				}else
 				     include('modules/left/home.php');
 				 include('modules/right/right.php');

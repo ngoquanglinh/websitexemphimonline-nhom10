@@ -19,6 +19,12 @@ h1, .h1, h2, .h2, h3, .h3{
 	padding:0px;  
 }
 /*css cho menu tren*/
+#menu .affix{
+	 z-index: 9999 !important;
+	 top:0px;
+	 width: 72.7%;
+
+}
 .cf-top{
 	background-color:#8328f2;
 }
@@ -39,7 +45,7 @@ h1, .h1, h2, .h2, h3, .h3{
 	margin-left:100px;
 }
 .form-control{
-    font-size: 30px;
+    font-size: 20px;
 }
 .btnhoidap{
     color:#592a92;
@@ -112,11 +118,14 @@ h1, .h1, h2, .h2, h3, .h3{
 	font-size: 11px;		
 	color: #f1f1f1;
 }
+.sub-menu li a{
+}
 #menu ul li:hover .sub-menu{
 	display: block;
     top: 100%;
     left: 0;
     z-index: 101;  
+    text-transform:uppercase;     
 }
 .sub-menu li a{
 	font-size: 11px !important;
@@ -403,10 +412,9 @@ h4{
 	width: 300px;
 	margin-left: -15px;
 }
-.phim-sc ul{
-}
-.image{
-
+.phim-sc ul li a{
+	list-style: none;
+	text-decoration: none;
 }
 .image-name{
 	display:flex;
@@ -417,12 +425,19 @@ h4{
 .read-name{
 	padding-left: 8px;
 }
+.read-name p{
+	color: #fff;
+}
 .tt-phim{
  flex-direction: column;
  position: relative;
+ width: 80%;
 }
 .tt-phim p{
-	margin:0px !important; 
+	margin: 0px !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .mat-sau{
      position: absolute;
@@ -519,6 +534,23 @@ h4{
     font-weight: bold;
 	margin-left:0px;
 	margin-right:0px;
+	margin-top: 5px;
+}
+.title-pagephim{
+	position: relative;
+}
+.title-pagephim i{
+	position: absolute;
+	left: 10px;
+	top:-7px;
+}
+.title-pagephim h3{
+	padding-left: 30px;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: tahoma, verdana, arial, sans-serif;
 }
 .film-infor{
 	color: #dcdcdc;
@@ -565,11 +597,11 @@ h4{
 
 }
 .option{
-	padding:10px 5px 10px 0;
+	padding:10px 0px 10px 0;
 	margin-left: 15px; 
 }
 .option button{
-	width: 140px;
+	width: 120%;
 	border-radius: 3px;
 	padding: 3px;
     font-size: 12px;
@@ -619,4 +651,17 @@ video{
     width:97%;
     margin-bottom: 3px;
     height: 80px;
+}
+/* trang loai phim */
+.pagephim{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.pagect{
+	padding:0px; 
+}
+.dmm{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding:0; 
 }
