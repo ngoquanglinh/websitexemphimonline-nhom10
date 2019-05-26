@@ -26,12 +26,12 @@
   		<td><?php echo $i++ ?></td>
   		<td><?php echo $array['id_phim'] ?></td>
   		<td><?php echo $array['tenphim'] ?></td>
-  	    <td><?php echo $array['linkphim']?>
+  	  <td><?php echo $array['linkphim']?>
   		<td><?php echo $array['anh'] ?></td>
   		<td><?php echo $array['ten_english'] ?></td>
   		<td><?php echo $array['id_loaiphim'] ?></td>
-  		<td><button type="button" class="btn btn-success">Sửa</button></td>
-  		<td><button type="button" class="btn btn-success">Xóa</button></td>
+  		<td><a href="index.php?quanly=quanlychitietphim&ac=sua&id=<?php echo $array['id_phim'] ?>"><input type="submit" class="btn btn-success" value="Sửa"></a></td>
+  		<td><a href="modules/quanlychitietphim/xuly.php?id=<?php echo $array['id_phim'] ?>"><input type="submit" class="btn btn-success" value="Xóa"></a></td>
   	</tr>
   </tbody>
   	<?php

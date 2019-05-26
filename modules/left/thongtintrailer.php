@@ -9,7 +9,7 @@ $array_trailer=mysqli_fetch_array($query_trailer);
     <div class="row thongtinfilm">
       <div class="col-md-5">
         <div class="pf-image">
-          <img src="<?php echo $array_trailer['image_trailer']?>" alt="">
+          <img src="admin/modules/quanlychitietphim/uploads/<?php echo $array_trailer['image_trailer']?>" alt="">
           <a href="index.php?view=xemtrailer&id_trailer=<?php echo $array_trailer['id_trailer']?>">
             <button><i class="fas fa-play-circle icon-btn-xp">xem phim</i></button>
           </a>	

@@ -4,7 +4,7 @@
 			<div class="row ">
 				<div class="col-md-12">
 					<div class="ads">
-						<img src="image/ads.gif" alt="">
+						<img src="admin/modules/quanlychitietphim/uploads/ads.gif" alt="">
 					</div>
 				</div>
 			</div>

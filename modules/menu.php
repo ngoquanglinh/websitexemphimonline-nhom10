@@ -2,7 +2,7 @@
 		<div class="container-fluid cf-content">
 			<div class="container">
 				<div class="row ds-menu">
-					<div class="col-md-12">
+					<div class="col-md-12 col-xs-12 col-sm-12">
 						<div id="menu">
 							<ul data-spy="affix" data-offset-top="30">
 								<li id="home"><a href="index.php"><i class="fas fa-home"></i></a></li>

@@ -30,8 +30,8 @@
   		<td><?php echo $array['image_trailer'] ?></td>
       <td><?php echo $array['noidung_trailer'] ?></td>
   		<td><?php echo $array['tenenglish_trailer'] ?></td>
-  		<td><button type="button" class="btn btn-success">Sửa</button></td>
-  		<td><button type="button" class="btn btn-success">Xóa</button></td>
+  		<td><a href="index.php?quanly=quanlytrailerphim&ac=sua&id=<?php echo $array['id_trailer'] ?>"><button type="button" class="btn btn-success">Sửa</button></a></td>
+  		<td><a href="modules/quanlytrailerphim/xuly.php?id=<?php echo $array['id_trailer']?>"><button type="button" class="btn btn-success">Xóa</button></a></td>
   	</tr>
   </tbody>
   	<?php

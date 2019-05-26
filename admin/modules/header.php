@@ -36,7 +36,7 @@ if(isset($_SESSION['dangnhap'])){
 							<i class="fas fa-envelope"></i>
 						</div>
 						<div class="image-admin">
-							<img src="../image/avatar-2-2017.jpg">
+							<img src="modules/quanlychitietphim/uploads/avatar-2-2017.jpg">
 						</div>
 						<div class="name-admin">
 

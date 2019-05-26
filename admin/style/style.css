@@ -209,6 +209,5 @@ ul.affix{
 .login input:focus{
 	background-color: white;
 	width: 300px;
-
 	color: @prim;
 }

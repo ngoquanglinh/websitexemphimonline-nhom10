@@ -9,13 +9,13 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="image/slide1.jpg" alt="...">
+						<img src="admin/modules/quanlychitietphim/uploads/slide1.jpg" alt="...">
 					</div>
 					<div class="item">
-						<img src="image/slide2.jpg" alt="...">
+						<img src="admin/modules/quanlychitietphim/uploads/slide2.jpg" alt="...">
 					</div>
 					<div class="item">
-						<img src="image/slide3.jpg" alt="...">
+						<img src="admin/modules/quanlychitietphim/uploads/slide3.jpg" alt="...">
 					</div>
 				</div>
 
@@ -40,9 +40,9 @@
 						<?php	
 						while($array_phim=mysqli_fetch_array($query_phim)){
 						?>	
-							<div class="col-xs-6 col-md-3 edit-pd">
+							<div class="col-xs-6 col-sm-4 col-md-3 edit-pd">
 								<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phim['id_loaiphim']?>&id_phim=<?php echo $array_phim['id_phim']?>" class="thumbnail">
-									<img src="<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="anh">
+									<img src="admin/modules/quanlychitietphim/uploads/<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="anh">
 									<p class="name"><?php echo $array_phim['tenphim'] ?></p>
 									<p class="real-name"><?php echo $array_phim['ten_english'] ?></p>
 								</a>
@@ -61,9 +61,9 @@
 						<?php	
 						while($array_phim=mysqli_fetch_array($query_phim)){
 						?>	
-							<div class="col-xs-6 col-md-3 edit-pd">
+							<div class="col-xs-6 col-sm-4 col-md-3 edit-pd">
 								<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phim['id_loaiphim']?>&id_phim=<?php echo $array_phim['id_phim']?>" class="thumbnail">
-									<img src="<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="...">
+									<img src="admin/modules/quanlychitietphim/uploads/<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="...">
 									<p class="name"><?php echo $array_phim['tenphim'] ?></p>
 									<p class="real-name"><?php echo $array_phim['ten_english'] ?></p>
 								</a>
@@ -82,9 +82,9 @@
 						<?php	
 						while($array_phim=mysqli_fetch_array($query_phim)){
 						?>	
-							<div class="col-xs-6 col-md-3 edit-pd">
+							<div class="col-xs-6 col-sm-4 col-md-3 edit-pd">
 								<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phim['id_loaiphim']?>&id_phim=<?php echo $array_phim['id_phim']?>" class="thumbnail">
-									<img src="<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="...">
+									<img src="admin/modules/quanlychitietphim/uploads/<?php echo $array_phim['anh'] ?>" data-src="holder.js/100%x180" alt="...">
 									<p class="name"><?php echo $array_phim['tenphim'] ?></p>
 									<p class="real-name"><?php echo $array_phim['ten_english'] ?></p>
 								</a>
@@ -104,13 +104,14 @@
 			</div>
 		</div>
 		<!-- kết thúc sline phim lẻ và bộ -->
-		<div class="row title-phimbo">
-			<div class="col-md-12">
-				<div class="col-md-9">
-					<h3><i class="fas fa-align-justify"></i>phim bộ mới cập nhật</h3>
+		<div class="row title-phimbo">	
+				<div class="col-md-12  col-md-12 col-xs-12 ">
+					<h3>
+						<i class="fas fa-align-justify"></i>
+						<span>phim bộ mới cập nhật</span>
+						<a href="">xem tất cả</a>
+					</h3>
 				</div>
-				<div class="col-md-3 all"><a href="">xem tất cả</a></div>	
-			</div>
 		</div>
 		<!-- bắt đàu phim bộ -->
 		<?php
@@ -123,9 +124,9 @@
 				while($array_phimbo=mysqli_fetch_array($query_phimbo)){
 			?>				
 
-				<div class="col-xs-6 col-md-3 edit-pd">
+				<div class="col-xs-6 col-sm-4 col-md-3 edit-pd">
 					<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phimbo['id_loaiphim']?>&id_phim=<?php echo $array_phimbo['id_phim']?>" class="thumbnail">
-						<img src="<?php echo $array_phimbo['anh'] ?>" data-src="holder.js/100%x180" alt="...">
+						<img src="admin/modules/quanlychitietphim/uploads/<?php echo $array_phimbo['anh'] ?>" data-src="holder.js/100%x180" alt="...">
 						<p class="name"><?php echo $array_phimbo['tenphim'] ?></p>
 						<p class="real-name"><?php echo $array_phimbo['ten_english'] ?></p>
 					</a>
@@ -136,13 +137,13 @@
 			</div>
 		</div>
 		<!-- title thứ 2 -->
-		<div class="row title-phimbo">
-			<div class="col-md-12">
-				<div class="col-md-9">
-					<h3><i class="fas fa-align-justify"></i>phim lẻ mới cập nhật</h3>
+		<div class="row title-phimbo">	
+				<div class="col-md-12  col-md-12 col-xs-12">
+					<h3><i class="fas fa-align-justify"></i>
+						<span>phim lẻ mới cập nhật</span>
+						<a href="">xem tất cả</a>
+					</h3>
 				</div>
-				<div class="col-md-3 all"><a href="">xem tất cả</a></div>	
-			</div>
 		</div><!-- thumbnail 5 -->
 		<?php
 		$sql_phimle="select * from chitiet_phim where id_loaiphim=1";
@@ -154,9 +155,9 @@
 				while($array_phimle=mysqli_fetch_array($query_phimle)){
 					?>				
 
-					<div class="col-xs-6 col-md-3 edit-pd">
+					<div class="col-xs-6 col-sm-4 col-md-3 edit-pd">
 						<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phimle['id_loaiphim']?>&id_phim=<?php echo $array_phimle['id_phim']?>" class="thumbnail">
-							<img src="<?php echo $array_phimle['anh']?>" data-src="holder.js/100%x180" alt="abc">
+							<img src="admin/modules/quanlychitietphim/uploads/<?php echo $array_phimle['anh']?>" data-src="holder.js/100%x180" alt="abc">
 							<p class="name"><?php echo $array_phimle['tenphim']?></p>
 							<p class="real-name"><?php echo $array_phimle['ten_english']?></p>
 						</a>
@@ -168,11 +169,13 @@
 		</div>
 		<!-- kết thúc phim lẻ dòng 1 -->
 		<!-- title thứ 3 -->
-		<div class="row title-phimbo">
-			<div class="col-md-12">
-				<div class="col-md-9"><h3><i class="fas fa-align-justify"></i>anime phim hoạt hình</h3></div>
-				<div class="col-md-3 all"><a href="">xem tất cả</a></div>						
-			</div>
+		<div class="row title-phimbo">	
+				<div class="col-md-12 col-md-12 col-xs-12">
+					<h3><i class="fas fa-align-justify"></i>
+						<span>Anime mới cập nhật</span>
+						<a href="">xem tất cả</a>
+					</h3>
+				</div>
 		</div>
 		<!-- thumbnail 8 -->
 		<?php
@@ -184,9 +187,9 @@
 				<?php
 				while ($array_phimhoathinh=mysqli_fetch_array($query_phimhoathinh)){
 				?>						
-					<div class="col-xs-6 col-md-3 edit-pd">			
+					<div class="col-xs-6 col-sm-4 col-md-3 edit-pd">			
 						<a href="index.php?xem=thongtinphim&id_loaiphim=<?php echo $array_phimhoathinh['id_loaiphim']?>&id_phim=<?php echo $array_phimhoathinh['id_phim']?>" class="thumbnail">
-							<img src="<?php echo $array_phimhoathinh['anh']?>" data-src="holder.js/100%x180" alt="...">
+							<img src="admin/modules/quanlychitietphim/uploads/<?php echo $array_phimhoathinh['anh']?>" data-src="holder.js/100%x180" alt="...">
 							<p class="name"><?php echo $array_phimhoathinh['tenphim']?></p>
 							<p class="real-name"><?php echo $array_phimhoathinh['ten_english']?></p>
 						</a>				

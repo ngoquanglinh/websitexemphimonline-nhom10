@@ -71,7 +71,7 @@
 								<li>
 									<a href="index.php?xem=thongtintrailer&id_trailer=<?php echo $array_trailer['id_trailer'] ?>">
 									<div class="image-name">
-										<div><img src="<?php echo $array_trailer['image_trailer'] ?>" alt=""></div>
+										<div><img src="admin/modules/quanlychitietphim/uploads/<?php echo $array_trailer['image_trailer'] ?>" alt=""></div>
 										<div class="tt-phim">
 											<div class="name"><p><?php echo $array_trailer['tenphim_trailer'] ?></p></div>
 											<div class="read-name"><p><?php echo $array_trailer['tenenglish_trailer'] ?></p></div>

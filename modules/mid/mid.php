@@ -55,7 +55,7 @@ if (isset($link_video)){
 					<p>cú pháp tìm kiếm nhanh nhất trên google:[tên phim + bilutv]]</p>
 				</div>
 				<div class="row ads1">
-					<img src="image/ads1.gif">
+					<img src="admin/modules/quanlychitietphim/uploads/ads.gif">
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
   <script src="https://cloud.tinymce.com/5/tinymce.min.js"></script>
   <script>tinymce.init({ selector:'textarea' });</script>
-<form action="" method="post" enctype="mutlipart/form-data">
+<form action="modules/quanlytrailerphim/xuly.php" method="post" enctype="multipart/form-data">
 <div class="table-responsive">
   <table class="table">
   	<thead>
@@ -11,23 +11,23 @@
   	<tbody>
   		<tr>
   			<td>Tên Trailer Phim</td>
-  			<td><input type="text" name="" size="30"></td>
+  			<td><input type="text" name="tenphim" size="30"></td>
   		</tr>
   		<tr>
   			<td>Link Trailer</td>
-  			<td><input type="text" name="" size="30"></td>
+  			<td><input type="text" name="linkphim" size="30"></td>
   		</tr>
   		<tr>
   			<td>image</td>
-  			<td><input type="file" name="" size="30"></td>
+  			<td><input type="file" name="hinhanh" size="30"></td>
   		</tr>
   		<tr>
   			<td>Name English</td>
-  			<td><input type="text" name="" size="30"></td>
+  			<td><input type="text" name="ten_english" size="30"></td>
   		</tr>
       <tr>
         <td>Nội dung</td>
-        <td><textarea name="" rows="20"></textarea></td>
+        <td><textarea name="noidung" rows="20"></textarea></td>
       </tr>
   				<?php
   			$sql="select * from loaiphim";
@@ -36,7 +36,7 @@
   		<tr>
   			<td>ID Loại Phim</td>
   			<td>
-  				<select name="">
+  				<select name="loaiphim">
   				<?php
   					while ($array=mysqli_fetch_array($query)){		
   				?>
@@ -49,7 +49,7 @@
   		</tr>
  
   		<tr>
-  			<td colspan="2" style="text-align: center;"><input type="button" class="btn btn-success" value="Thêm"></td>
+  			<td colspan="2" style="text-align: center;"><input type="submit" class="btn btn-success" name="them" value="Thêm"></td>
   		</tr>
   	</tbody>
 

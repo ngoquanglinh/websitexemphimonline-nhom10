@@ -1,20 +1,20 @@
-<!-- bat dau phan navbar -->
+
 <div class="header">
 	<div class="container-fluid cf-top">
 		<div class="container">
 			<div class="row row1">
-				<div class="col-md-12">
+				<div class="col-md-12 col-12 col-sm-12">
 					<!-- tao menu -->
 					<div class="navbar-header">
-						<img class="navbar-brand" src="image/logo.png" alt="logo">
+						<img class="navbar-brand" src="admin/modules/quanlychitietphim/uploads/logo.png" alt="logo">
 					</div>
 					<!-- menu va logo -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<form class="navbar-form navbar-left formsearch" role="search">
+						<form action="index.php" method="post" class="navbar-form navbar-left formsearch" role="search">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="">
+								<input type="text" class="form-control" placeholder="..." name="search">
 							</div>
-							<button type="submit" class="btn btn-default"><i class="fas fa-search btn-search"></i></button>
+							<button type="submit" class="btn btn-default" name="btnsearch"><i class="fas fa-search btn-search"></i></button>
 						</form>
 						<button type="button" class="btn btn-primary navbar-right btn-nav"><i class="fas fa-envelope"></i>Liên hệ</button>
 

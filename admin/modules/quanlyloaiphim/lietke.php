@@ -18,8 +18,8 @@
     	<td><?php echo $i++; ?></td>
     	<td><?php echo $array['id_loaiphim'] ?></td>
     	<td><?php echo $array['tênloai_phim'] ?></td>
-    	<td><button type="button" class="btn btn-success btn-sm">Sửa</button></td>
-    	<td><button type="button" class="btn btn-success btn-sm">Xóa</button></td>
+    	<td><a href="index.php?quanly=quanlyloaiphim&ac=sua&id=<?php echo $array['id_loaiphim']?>"><button type="button" class="btn btn-success btn-sm">Sửa</button></a></td>
+    	<td><a href="modules/quanlyloaiphim/xuly.php?id=<?php echo $array['id_loaiphim']?>"><button type="button" class="btn btn-success btn-sm">Xóa</button></a></td>
     </tr>
     <?php
 		}

@@ -36,7 +36,9 @@
 				}elseif($tam=='loaiphim'){
 				     include('modules/left/loaiphim.php');
 		        }elseif($tam=='thongtintrailer'){
-				include('modules/left/thongtintrailer.php');
+					include('modules/left/thongtintrailer.php');
+				}elseif(isset($_POST['btnsearch'])){
+					include('modules/left/search.php');
 				}else
 				     include('modules/left/home.php');
 				 include('modules/right/right.php');

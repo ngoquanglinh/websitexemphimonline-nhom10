@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>bilutv</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:300|Noto+Serif|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="fontawesome/fontawesome-free-5.7.2-web/css/all.min.css" type="text/css">
