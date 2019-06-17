@@ -18,7 +18,7 @@ if(isset($_SESSION['dangnhap'])){
 						<span class="icon-bar"></span>
 					</button>
 
-					<div class="logo" href="#">Brand</div>
+					<div class="logo" href="modules/quanlychitietphim/uploads/4.png">Brand</div>
 
 				</div>
 

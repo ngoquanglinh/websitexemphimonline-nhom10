@@ -1,7 +1,7 @@
 
 			<div class="conten-right">	<!-- bắt đầu right -->
 				
-				<div class="col-md-4">
+				<div class="col-md-4 hidden-sm hidden-xs">
 					<div class="row title-right">
 						<div class="col-md-12">
 							<a href="">xem nhiều trong ngày</a>

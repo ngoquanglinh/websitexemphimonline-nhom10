@@ -3,8 +3,8 @@
 		<div class="container">
 			<div class="row row-footer">
 				<div class="col-md-4 col-xs-12 col-sm-12">
-					<img src="admin/modules/quanlychitietphim/uploads/bilutv-logo.png" alt=""><br />
-					<a>	Copyright ® 2018 BiluTV All Rights Reserved.
+					<a href="index.php"><img src="admin/modules/quanlychitietphim/uploads/4.png" alt=""></a><br />
+					<a>	Copyright ® 2019 localhost All Rights Reserved.
 					PhimBatHu.org</a>
 				</div>
 				<div class="col-md-2 col-xs-6 col-sm-6">
@@ -28,7 +28,7 @@
 				<div class="col-md-2 col-xs-6 col-sm-6">
 					<h5>biluTV</h5>
 					<ul>
-						<li><a href="">điều khoản sử dụng</a></li>
+						<li><a href="index.php?view=dieukhoan">điều khoản sử dụng</a></li>
 						<li><a href="">chính sách riêng tư</a></li>
 						<li><a href="">khiếu nại bản quyền</a></li>
 						<li><a href="">giới thiệu</a></li>
@@ -37,10 +37,10 @@
 				<div class="col-md-2 col-xs-6 col-sm-6">
 					<h5>trợ giúp</h5>
 					<ul>
-						<li><a href="">liên hệ</a></li>
-						<li><a href="">hỏi đáp</a></li>
+						<li><a href="index.php?view=lienhe">liên hệ</a></li>
+						<li><a href="index.php?view=hoidap">hỏi đáp</a></li>
 						<li><a href="">yêu cầu phim</a></li>
-						<li><a href="">facebook</a></li>
+						<li><a href="https://www.facebook.com/Web-phim-394877867969802/">facebook</a></li>
 					</ul>
 				</div>
 			</div>

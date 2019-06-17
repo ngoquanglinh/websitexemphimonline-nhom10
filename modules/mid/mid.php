@@ -52,10 +52,10 @@ if (isset($link_video)){
 					</div>
 				</div>
 				<div class="row messager">
-					<p>cú pháp tìm kiếm nhanh nhất trên google:[tên phim + bilutv]]</p>
+					<p>cú pháp tìm kiếm nhanh nhất trên google:[tên phim + localhost]]</p>
 				</div>
-				<div class="row ads1">
-					<img src="admin/modules/quanlychitietphim/uploads/ads.gif">
+				<div class="row ads">
+					<img src="admin/modules/quanlychitietphim/uploads/ads2.gif">
 				</div>
 			</div>
 		</div>
@@ -66,7 +66,7 @@ if (isset($link_video)){
 	<div class="container-fluid movie-bottom">
 		<div class="container">
 			<div class="row xem-film">
-				<div class="col-md-12"> 
+				<div class="col-md-12 col-xs-12 col-lg-12 col-sm-12"> 
 					<div class="fb-comments" data-href="https://www.facebook.com/linh0966756104" data-width="950"  
 					data-numposts="10">
 				</div>

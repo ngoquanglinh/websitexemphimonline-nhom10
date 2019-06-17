@@ -2,14 +2,14 @@
 		<div class="container-fluid cf-content">
 			<div class="container">
 				<div class="row ds-menu">
-					<div class="col-md-12 col-xs-12 col-sm-12">
+					<div class="col-md-12 col-xs-12 col-sm-12 hidden-xs hidden-sm">
 						<div id="menu">
 							<ul data-spy="affix" data-offset-top="30">
 								<li id="home"><a href="index.php"><i class="fas fa-home"></i></a></li>
 								<li>
-									<a href="#"><i class="far fa-clone"></i>thể loại</a>
+									<a ><i class="far fa-clone"></i>thể loại</a>
 									<ul class="sub-menu">
-										<li><a href="index.php?xem=loaiphim">phim kinh dị</a></li>
+										<li><a href="">phim kinh dị</a></li>
 										<li><a href="">hài hước</a></li>
 										<li><a href="">khoa học</a></li>
 										<li><a href="">thể thao</a></li>

@@ -3,10 +3,10 @@
 <div class="table-responsive">
   <table class="table">
     <tr>
-    	<th>Thêm Loại Sản Phẩm</th>
+    	<th>Thêm Loại Phim</th>
     </tr>
     <tr>
-    	<td>Tên loại sản phẩm</td>
+    	<td>Tên Loại Phim</td>
     	<td><input type="text" name="tenloaiphim" size="30"></td>
     </tr>
     <tr>

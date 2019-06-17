@@ -6,7 +6,7 @@
 				<div class="col-md-12 col-12 col-sm-12">
 					<!-- tao menu -->
 					<div class="navbar-header">
-						<img class="navbar-brand" src="admin/modules/quanlychitietphim/uploads/logo.png" alt="logo">
+						<img class="navbar-brand" src="admin/modules/quanlychitietphim/uploads/4.png" alt="logo">
 					</div>
 					<!-- menu va logo -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -16,9 +16,9 @@
 							</div>
 							<button type="submit" class="btn btn-default" name="btnsearch"><i class="fas fa-search btn-search"></i></button>
 						</form>
-						<button type="button" class="btn btn-primary navbar-right btn-nav"><i class="fas fa-envelope"></i>Liên hệ</button>
+						<a href="index.php?view=lienhe"><button type="button" class="btn btn-primary navbar-right btn-nav"><i class="fas fa-envelope"></i>Liên hệ</button></a>
 
-						<button type="button" class="btn btn-primary navbar-right btn-nav"><i class="fas fa-comments"></i>Hỏi đáp</button>
+						<a href="index.php?view=hoidap"><button type="button" class="btn btn-primary navbar-right btn-nav"><i class="fas fa-comments"></i>Hỏi đáp</button></a>
 
 					</div><!-- /.tim kiem va dang ky hoi dap -->
 				</div>

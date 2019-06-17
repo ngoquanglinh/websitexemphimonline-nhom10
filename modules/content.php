@@ -11,6 +11,15 @@
 			}elseif ($tamt=='xemtrailer') {
 				 include('modules/mid/trailer.php');
 			}
+			elseif($tamt=='dieukhoan'){
+				include('modules/mid/dieukhoan.php');
+			}
+			elseif($tamt=='lienhe'){
+				include('modules/mid/lienhe.php');
+			}
+			elseif($tamt=='hoidap'){
+				include('modules/mid/hoidap.php');
+			}
 			else
 			{
 				if(isset($_GET['xem'])){
